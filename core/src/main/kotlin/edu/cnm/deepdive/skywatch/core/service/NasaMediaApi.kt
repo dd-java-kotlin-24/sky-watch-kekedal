@@ -1,4 +1,4 @@
-import retrofit2.Call
+package edu.cnm.deepdive.skywatch.core.service
 
 interface NasaMediaApi {
 
