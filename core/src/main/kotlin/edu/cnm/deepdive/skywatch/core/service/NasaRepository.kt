@@ -1,6 +1,6 @@
 package edu.cnm.deepdive.skywatch.core.service
 
-import edu.cnm.deepdive.skywatch.core.model.dto.SearchItem
+import edu.cnm.deepdive.skywatch.core.model.dto.nasa.SearchItem
 import java.time.OffsetDateTime
 
 internal object NasaRepository : MediaRepository {
