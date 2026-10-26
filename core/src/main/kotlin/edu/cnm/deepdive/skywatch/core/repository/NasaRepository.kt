@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.skywatch.core.service
+package edu.cnm.deepdive.skywatch.core.repository
 
 import com.squareup.moshi.FromJson
 import com.squareup.moshi.Moshi
@@ -12,7 +12,6 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
-import java.io.UncheckedIOException
 import java.net.URI
 import java.net.URL
 import java.time.OffsetDateTime

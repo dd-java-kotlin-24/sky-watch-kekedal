@@ -8,5 +8,5 @@ data class ItemData(
     val center: String,
     @Json(name = "date_created")val dateCreated: OffsetDateTime,
     val description: String,
-    val keywords: List<String>,
+    val keywords: List<String> = listOf(),
 )
