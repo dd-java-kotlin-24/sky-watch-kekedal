@@ -6,7 +6,7 @@ import java.net.URL
 @JsonClass(generateAdapter = true)
 data class SearchItem(
     val mediaCollectionUrl: URL,
-    val dat: List<ItemData>,
+    val data: List<ItemData>,
     val links: List<Link>,
 
 )

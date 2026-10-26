@@ -4,7 +4,7 @@ import java.net.URL
 
 data class SearchResultImage(
     val description: String,
-    val keyworkds: List<String>,
+    val keywords: List<String>,
     val image: URL,
     val thumbnail: URL,
     )
