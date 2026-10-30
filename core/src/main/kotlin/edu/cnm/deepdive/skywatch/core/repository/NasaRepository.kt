@@ -95,7 +95,7 @@ internal object NasaRepository : MediaRepository {
      * @param endDate
      *
      */
-    override fun search(
+    override suspend fun search(
         searchFilter: String?,
         startDate: OffsetDateTime?,
         endDate: OffsetDateTime?,

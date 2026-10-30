@@ -27,7 +27,7 @@ interface MediaRepository {
      *
      * @throws Exception (specific type specific by implementation) for any other network-access or service  communication failure.
      */
-    fun search(
+    suspend fun search(
         searchFilter: String? = null,
         startDate: OffsetDateTime? = null,
         endDate: OffsetDateTime? = null,

@@ -20,6 +20,7 @@ import javafx.application.Application;
 class Main {
 
   static void main(String[] args) {
+
     Application.launch(SkyWatchApplication.class, args);
   }
 

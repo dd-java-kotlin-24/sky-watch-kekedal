@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane
+  xmlns="http://javafx.com/javafx"
+  xmlns:fx="http://javafx.com/fxml"
+  fx:id="rootPane"
+  fx:controller="edu.cnm.deepdive.skywatch.javafx.controller.MainController"
+  stylesheets="@main.css">
+
+  <top>
+    <HBox>
+      <!-- TODO Add search controls.-->
+    </HBox>
+  </top>
+
+  <center>
+    <ListView
+      fx:id="searchResults"/>
+  </center>
+
+
+
+</BorderPane>

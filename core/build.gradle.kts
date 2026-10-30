@@ -29,7 +29,19 @@ kotlin {
     jvmToolchain(javaVersion.toInt())
 }
 
+tasks.jar {
+    manifest {
+        attributes(
+            mapOf(
+                "Automatic-Module-Name" to "edu.cnm.deepdive.skywatch.core"
+            )
+        )
+    }
+}
 dependencies {
+
+    implementation(libs.kotlin.coroutines.core)
+    implementation(libs.kotlin.coroutines.jdk8)
 
     implementation(libs.retrofit.core)
     implementation(libs.retrofit.converter.moshi)

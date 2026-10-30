@@ -54,6 +54,7 @@ tasks.named<JavaExec>("run") {
 dependencies {
 
     implementation(project(":core"))
+    implementation(libs.jspecify)
 
     testImplementation(libs.kotlin.test)
     testImplementation(libs.junit.aggregator)
@@ -77,6 +78,10 @@ tasks.javadoc {
     with(options as StandardJavadocDocletOptions) {
         links("https://docs.oracle.com/en/java/javase/${javaVersion}/docs/api/")
     }
+}
+
+tasks.named<JavaExec>("run"){
+    jvmArgs("--enable-native-access=javafx.graphics")
 }
 
 fun subprojectProperty(name: String): Provider<String> =
