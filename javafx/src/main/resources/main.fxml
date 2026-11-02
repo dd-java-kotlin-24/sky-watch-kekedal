@@ -18,7 +18,7 @@
       id="searchControls">
 
       <TextField
-        fx:id="searchField"/>
+        fx:id="searchFilter"/>
 
       <Button
         fx:id="search"

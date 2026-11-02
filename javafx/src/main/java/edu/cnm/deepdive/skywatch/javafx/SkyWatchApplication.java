@@ -16,6 +16,7 @@
 package edu.cnm.deepdive.skywatch.javafx;
 
 import edu.cnm.deepdive.skywatch.javafx.controller.MainController;
+import edu.cnm.deepdive.skywatch.javafx.di.DaggerJavaFxComponent;
 import java.util.ResourceBundle;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -56,7 +57,7 @@ public class SkyWatchApplication extends Application {
 
   @Override
   public void stop() throws Exception {
-    //TODO:  shut down the service
+    //TODO: shut down the service
     super.stop();
   }
 

@@ -20,7 +20,6 @@ plugins {
     alias(libs.plugins.dokka)
     alias(libs.plugins.ksp)
     jacoco
-
 }
 
 val javaVersion = libs.versions.java.get()
@@ -28,7 +27,6 @@ val javaVersion = libs.versions.java.get()
 kotlin {
     jvmToolchain(javaVersion.toInt())
 }
-
 
 dependencies {
 
@@ -46,6 +44,7 @@ dependencies {
     implementation(libs.okhttp)
     implementation(libs.logging.interceptor)
 
+    testImplementation(kotlin("reflect"))
     testImplementation(libs.kotlin.test)
     testImplementation(libs.junit.aggregator)
     testRuntimeOnly(libs.junit.engine)

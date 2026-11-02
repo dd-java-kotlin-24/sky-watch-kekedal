@@ -17,7 +17,7 @@ public class MainController {
   @FXML
   private BorderPane rootPane;
   @FXML
-  private TextField searchField;
+  private TextField searchFilter;
   @FXML
   private Button search;
   @FXML
@@ -28,9 +28,14 @@ public class MainController {
     this.viewModel = viewModel;
   }
 
-
+  @FXML
+  private void initialize() {
+    viewModel.subscribeToResult((results) -> {
+      System.out.println(results);
+    });
+  }
   @FXML
   public void search(ActionEvent actionEvent) {
-    // TODO: 2026-11-02 Invoke search method on viewmodel.
+    viewModel.search(searchFilter.getText(), null, null);
   }
 }
