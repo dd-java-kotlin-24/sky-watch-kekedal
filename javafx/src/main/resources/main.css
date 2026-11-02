@@ -3,3 +3,9 @@
   -fx-min-width: 720px;
   -fx-min-height: 600px;
 }
+
+#searchResults {
+  -fx-spacing: 10px;
+  -fx-alignment: baseline-center;
+  -fx-padding: 10px;
+}
