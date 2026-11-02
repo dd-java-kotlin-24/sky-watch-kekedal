@@ -1,5 +1,7 @@
 module edu.cnm.deepdive.skywatch.javafx {
 
+  requires dagger;
+  requires jakarta.inject;
   requires javafx.controls;
   requires javafx.fxml;
   requires java.compiler;
@@ -8,6 +10,7 @@ module edu.cnm.deepdive.skywatch.javafx {
 
 
   requires edu.cnm.deepdive.skywatch.core;
+
 
   exports edu.cnm.deepdive.skywatch.javafx to javafx.graphics;
 
