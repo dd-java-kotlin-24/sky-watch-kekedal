@@ -10,6 +10,12 @@
   -fx-padding: 10px;
 }
 
+#searchResults {
+  -fx-padding: 5px;
+  -fx-hgap: 10px;
+  -fx-vgap: 5px;
+}
+
 #searchResults .list-cell {
   -fx-pref-width: 0;
   -fx-padding: 0;
