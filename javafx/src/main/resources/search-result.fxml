@@ -2,12 +2,26 @@
 
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 
 <GridPane
   xmlns="http://javafx.com/javafx"
   xmlns:fx="http://javafx.com/fxml"
+  styleClass="search-result"
+  prefWidth="${controller.width}"
   stylesheets="@main.css">
+
+  <columnConstraints>
+    <ColumnConstraints
+      hgrow="ALWAYS"
+      minWidth="0"/>
+    <ColumnConstraints
+      hgrow="NEVER"
+      minWidth="120"
+      prefWidth="120"
+      maxWidth="120"/>
+  </columnConstraints>
 
   <Label
     fx:id="description"
@@ -16,6 +30,8 @@
 
   <ImageView
     fx:id="thumbnail"
+    fitWidth="120"
+    preserveRatio="true"
     GridPane.rowIndex="0"
     GridPane.columnIndex="1"/>
 
