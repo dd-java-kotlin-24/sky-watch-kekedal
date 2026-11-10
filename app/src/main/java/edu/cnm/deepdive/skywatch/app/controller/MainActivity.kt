@@ -19,7 +19,7 @@ import kotlin.getValue
 class MainActivity : AppCompatActivity() {
 
     @Inject
-    private lateinit var adapter: SearchResultsAdapter
+    internal lateinit var adapter: SearchResultsAdapter
     
     private val binding: ActivityMainBinding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
