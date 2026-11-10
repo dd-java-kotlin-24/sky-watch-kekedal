@@ -5,6 +5,7 @@ import com.squareup.moshi.JsonClass
 import java.time.OffsetDateTime
 @JsonClass(generateAdapter = true)
 data class ItemData(
+    val nasaId: String,
     val center: String,
     @Json(name = "date_created")val dateCreated: OffsetDateTime,
     val description: String,
