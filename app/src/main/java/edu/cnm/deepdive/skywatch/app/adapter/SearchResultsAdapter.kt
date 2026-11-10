@@ -51,8 +51,8 @@ class SearchResultsAdapter @Inject constructor(@ActivityContext context: Context
 
         fun bind(position: Int, item: SearchResultImage) {
             binding.description.text = item.description
-            binding.thumbnail.load(item.thumbnail)
-            // TODO: Assign values form properties of item to widgets in binding.
+            binding.thumbnail.load(item.thumbnail.toString())
+
         }
 
     }

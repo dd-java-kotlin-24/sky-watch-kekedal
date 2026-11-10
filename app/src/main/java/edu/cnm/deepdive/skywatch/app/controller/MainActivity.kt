@@ -30,6 +30,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setupLayout()
+        setupViewModel()
+        setupListeners()
     }
 
     private fun setupLayout() {
@@ -54,6 +56,7 @@ class MainActivity : AppCompatActivity() {
     }
     
     private fun setupListeners() {
+        binding.searchResults.adapter = adapter
         binding
             .submit
             .setOnClickListener { 
