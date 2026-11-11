@@ -31,8 +31,12 @@ data class Favorite(
     @ColumnInfo(name = "external_key")
     val externalKey: String,
 
+    @ColumnInfo(name = "description")
     val description: String,
     val thumbnail: URL,
     val image: URL,
     val favorited: Instant,
+
+    @ColumnInfo(name = "user_id")
+    val userId: Long
 )

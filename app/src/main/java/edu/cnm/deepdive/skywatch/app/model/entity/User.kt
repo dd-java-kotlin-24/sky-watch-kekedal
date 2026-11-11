@@ -29,7 +29,5 @@ data class User(
 
     val created: Instant,
 
-    @ColumnInfo(name = "user_id")
-    val userId: Long = 0
 ) {
 }

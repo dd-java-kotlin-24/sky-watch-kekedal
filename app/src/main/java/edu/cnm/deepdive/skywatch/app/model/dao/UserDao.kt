@@ -23,6 +23,10 @@ interface UserDao {
 
     @Query(USER_ID_QUERY)
     fun select(id: Long): LiveData<User>
+
+    @Query(OAUTH_KEY_QUERY)
+    suspend fun select(oauthKey: String): User?
+
 }
 
 private const val USER_ID_QUERY = """
@@ -32,4 +36,13 @@ private const val USER_ID_QUERY = """
        user
     WHERE
        user_id = :id
+"""
+
+private const val OAUTH_KEY_QUERY = """
+    SELECT
+        * 
+    FROM 
+        user 
+    WHERE 
+        oauth_key = :oauthKey
 """
