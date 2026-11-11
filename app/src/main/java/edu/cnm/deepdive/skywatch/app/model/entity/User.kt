@@ -11,7 +11,7 @@ import kotlin.time.Instant
     tableName = "user",
     indices = [
         Index(value = ["oauth_key"], unique = true),
-        Index(value = ["display_name"], unique = true)
+        Index(value = ["display_name"], unique = true),
     ]
 )
 data class User(
@@ -28,5 +28,8 @@ data class User(
     val avatar: URL? = null,
 
     val created: Instant,
+
+    @ColumnInfo(name = "user_id")
+    val userId: Long = 0
 ) {
 }
