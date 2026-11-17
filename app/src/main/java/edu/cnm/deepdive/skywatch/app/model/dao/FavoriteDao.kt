@@ -14,7 +14,7 @@ interface FavoriteDao {
     suspend fun insert(favorite: Favorite): Long
 
     @Delete
-    suspend fun delete (favorites: Favorite): Int
+    suspend fun delete (favorite: Favorite): Int
 
     @Query(ORDER_BY_DESCRIPTION)
     fun selectOrderByDescription(userID: Long): LiveData<List<Favorite>>

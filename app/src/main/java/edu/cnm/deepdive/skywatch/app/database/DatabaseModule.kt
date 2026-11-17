@@ -9,12 +9,15 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import edu.cnm.deepdive.skywatch.app.model.dao.FavoriteDao
 import edu.cnm.deepdive.skywatch.app.model.dao.UserDao
-import javax.inject.Singleton
+import jakarta.inject.Singleton
+
 
 @Module
 @InstallIn(SingletonComponent::class)
 class DatabaseModule {
 
+    @Provides
+    @Singleton
     fun provideDatabase(@ApplicationContext context: Context): SkyWatchDatabase =
         Room.databaseBuilder(
             context,
