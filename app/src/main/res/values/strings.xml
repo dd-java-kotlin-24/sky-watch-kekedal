@@ -2,4 +2,8 @@
   <string name="search_filter_hint">Search filter</string>
   <string name="submit_title">Submit</string>
   <string name="search_title">Search</string>
+  <string name="favorites_size_key">favorites_size_key</string>
+  <string name="favorites_size_title">Maximum number of favorites to display</string>
+  <string name="favorites_size_summary">0 = unlimited</string>
+  <string name="settings_title">Settings</string>
 </resources>
