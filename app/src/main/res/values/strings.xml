@@ -6,4 +6,5 @@
   <string name="favorites_size_title">Maximum number of favorites to display</string>
   <string name="favorites_size_summary">0 = unlimited</string>
   <string name="settings_title">Settings</string>
+  <string name="item_title">Search Item</string>
 </resources>

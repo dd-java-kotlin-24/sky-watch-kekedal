@@ -16,6 +16,6 @@ interface RepositoryModule {
 
     @Binds
     @Singleton
-    fun bindsFavoriteRepository(repository: FavoritesRepositoryImpl): FavoriteRepository
+    fun bindsFavoriteRepository(repository: FavoritesRepositoryImpl): FavoritesRepository
 
 }
