@@ -9,8 +9,8 @@ interface FavoriteRepository {
 
     suspend fun delete (favorite: Favorite): Int
 
-    fun selectOrderByDescription(userID: Long): LiveData<List<Favorite>>
+    fun selectOrderByDescription(userID: Long? = null): LiveData<List<Favorite>>
 
-    fun selectOrderByFavorited(userID: Long): LiveData<List<Favorite>>
+    fun selectOrderByFavorited(userID: Long? = null): LiveData<List<Favorite>>
 
 }
